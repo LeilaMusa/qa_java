@@ -1,4 +1,5 @@
-import com.example.Animal;
+package com.example;
+
 import org.junit.Test;
 
 import java.util.List;
@@ -25,12 +26,18 @@ public class AnimalTest {
     @Test
     public void testGetFoodForUnknownKind() {
         Exception exception = assertThrows(Exception.class, () -> animal.getFood("Неизвестное"));
-        assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник", exception.getMessage());
+        assertEquals(
+                "Неизвестный вид животного, используйте значение Травоядное или Хищник",
+                exception.getMessage()
+        );
     }
 
     @Test
     public void testGetFamily() {
-        assertEquals("Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи", animal.getFamily());
+        assertEquals(
+                "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи",
+                animal.getFamily()
+        );
     }
 }
 

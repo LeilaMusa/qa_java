@@ -1,11 +1,9 @@
-import com.example.Lion;
-import com.example.Predator;
+package com.example;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.junit.runners.Parameterized;
-
-import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 

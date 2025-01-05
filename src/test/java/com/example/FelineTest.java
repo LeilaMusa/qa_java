@@ -1,4 +1,5 @@
-import com.example.Feline;
+package com.example;
+
 import org.junit.Test;
 
 import java.util.List;
